@@ -1,0 +1,11 @@
+header {background-color: rgb(148, 207, 209);}
+li
+{
+    list-style-position: inside;
+}
+
+
+img{ display: flex; justify-content: end;}
+h2 { color:red;}
+header {display: flex; justify-content: center;}
+h4{ color: rgb(124, 23, 219);}

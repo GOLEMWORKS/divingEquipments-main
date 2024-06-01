@@ -1,0 +1,12 @@
+footer {background-color: rgb(148, 207, 209);}
+li
+{
+    list-style-position: inside;
+}
+footer { display:flex; justify-content: center;  }
+
+h2,p,li,h3{display: flex; justify-content: center;}
+img{ display: flex; justify-content: end;}
+h2 { color:red;}
+header {background-color: rgb(148, 207, 209);}
+h3{ color: rgb(124, 23, 219);}
