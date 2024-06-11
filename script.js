@@ -4,8 +4,12 @@ initSqlJs({ locateFile: filename => `https://cdnjs.cloudflare.com/ajax/libs/sql.
         db.exec("CREATE TABLE test (Name, Path); INSERT INTO test VALUES ('Mask', 'Mask.jpg'), ('Snorkel','Snorkel.jpg');"); // Заполняем таблицу тестовыми данными
         let stmt = db.prepare("SELECT * FROM test"); 
         
+        let parent = document.querySelector('#parent');
+
         while (stmt.step()){
-           console.log(stmt.get()); 
+            let p = document.createElement('p');
+            p.textContent = stmt.get(); 
+            parent.appendChild(p);
         } 
         stmt.free(); // Освобождаем ресурсы после выполнения запроса
     });
